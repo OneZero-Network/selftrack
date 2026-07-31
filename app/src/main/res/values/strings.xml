@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SelfTrack</string>
+    <string name="tagline">Track Every Step. Own Your Data.</string>
+    <string name="maps_key_missing">Google Maps API key missing. Add MAPS_API_KEY to local.properties to enable the map.</string>
+</resources>
