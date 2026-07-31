@@ -9,7 +9,7 @@ import com.selftrack.app.data.database.entity.RoutePointEntity
 @Database(
     entities = [ActivityEntity::class, RoutePointEntity::class],
     version = 1,
-    exportSchema = true
+    exportSchema = false
 )
 abstract class AppDatabase : RoomDatabase() {
     abstract fun activityDao(): ActivityDao

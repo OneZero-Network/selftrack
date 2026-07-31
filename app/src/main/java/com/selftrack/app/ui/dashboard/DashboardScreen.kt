@@ -9,6 +9,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.items
+import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
@@ -27,6 +28,7 @@ import com.selftrack.app.ui.components.StatCard
 import com.selftrack.app.ui.theme.SelfTrackTheme
 import com.selftrack.app.util.Formatters
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun DashboardScreen(
     onStartActivity: (ActivityType) -> Unit,
@@ -36,6 +38,7 @@ fun DashboardScreen(
     DashboardContent(uiState = uiState, onStartActivity = onStartActivity)
 }
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 private fun DashboardContent(
     uiState: DashboardUiState,
